@@ -1,59 +1,164 @@
-/* Estilo rascunho (planta) — simples e limpo */
+/* ============================== */
+/* VARIÁVEIS DO TEMA              */
+/* ============================== */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #00FA9A;
+}
 
+body.dark {
+  --bg: #0c0c0c;
+  --text: #f2f2f2;
+  --accent: #00FA9A;
+}
+
+/* ============================== */
+/* BACKGROUND COM BLUR            */
+/* ============================== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1526401485004-2fa806b5aa66?auto=format&fit=crop&w=1600&q=60")
+    center/cover no-repeat;
+  filter: blur(10px) brightness(0.6) saturate(1.4);
+  z-index: -1;
+}
+
+/* ============================== */
+/* GLOBAL                         */
+/* ============================== */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fafafa;
-  color: #333;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease;
 }
 
-header {
-  background: #e0f3b2;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 2rem 1rem;
+h1, h2 {
+  color: var(--accent);
 }
 
-nav {
-  background: #eee;
-  padding: 0.5rem;
+/* ============================== */
+/* HEADER                         */
+/* ============================== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  border-bottom: 1px solid var(--accent);
+  padding: 15px 0;
+  z-index: 1000;
 }
 
-nav ul {
-  list-style: none;
+.header ul {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0;
+  gap: 35px;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav a {
+.header a {
+  color: var(--text);
   text-decoration: none;
-  color: #000000;
   font-weight: bold;
 }
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
+.header a:hover {
+  color: var(--accent);
 }
 
-section {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+/* ============================== */
+/* BOTÃO DO TEMA                  */
+/* ============================== */
+#theme-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 20px;
+  background: var(--accent);
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 2000;
 }
 
-footer {
+/* ============================== */
+/* SEÇÕES                         */
+/* ============================== */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================== */
+/* CARDS                          */
+/* ============================== */
+.card {
+  width: 70vw;
+  min-height: 60vh;
+
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+  padding: 40px;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background: #005f99;
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
+}
+
+body.dark .card {
+  background: rgba(255,255,255,0.07);
+}
+
+/* ============================== */
+/* COMPETÊNCIAS                   */
+/* ============================== */
+.tech-grid {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.tech-item {
+  min-width: 120px;
+  text-align: center;
+}
+
+.tech-item img {
+  width: 60px;
+}
+
+/* ============================== */
+/* BOTÃO SECUNDÁRIO               */
+/* ============================== */
+.btn {
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #000;
 }
