@@ -1,6 +1,5 @@
-/* ============================== */
+
 /* VARIÁVEIS DO TEMA              */
-/* ============================== */
 :root {
   --bg: #ffffff;
   --text: #111111;
@@ -13,9 +12,7 @@ body.dark {
   --accent: #00FA9A;
 }
 
-/* ============================== */
 /* BACKGROUND COM BLUR            */
-/* ============================== */
 body::before {
   content: "";
   position: fixed;
@@ -26,9 +23,7 @@ body::before {
   z-index: -1;
 }
 
-/* ============================== */
 /* GLOBAL                         */
-/* ============================== */
 body {
   margin: 0;
   background: var(--bg);
@@ -41,9 +36,7 @@ h1, h2 {
   color: var(--accent);
 }
 
-/* ============================== */
 /* HEADER                         */
-/* ============================== */
 .header {
   position: fixed;
   top: 0;
@@ -73,9 +66,7 @@ h1, h2 {
   color: var(--accent);
 }
 
-/* ============================== */
 /* BOTÃO DO TEMA                  */
-/* ============================== */
 #theme-toggle {
   position: fixed;
   bottom: 25px;
@@ -90,9 +81,7 @@ h1, h2 {
   z-index: 2000;
 }
 
-/* ============================== */
 /* SEÇÕES                         */
-/* ============================== */
 .section {
   height: 100vh;
   display: flex;
@@ -100,9 +89,7 @@ h1, h2 {
   align-items: center;
 }
 
-/* ============================== */
 /* CARDS                          */
-/* ============================== */
 .card {
   width: 70vw;
   min-height: 60vh;
@@ -128,9 +115,9 @@ body.dark .card {
   background: rgba(255,255,255,0.07);
 }
 
-/* ============================== */
+
 /* COMPETÊNCIAS                   */
-/* ============================== */
+
 .tech-grid {
   display: flex;
   gap: 40px;
@@ -147,9 +134,9 @@ body.dark .card {
   width: 60px;
 }
 
-/* ============================== */
+
 /* BOTÃO SECUNDÁRIO               */
-/* ============================== */
+
 .btn {
   padding: 10px 20px;
   border: 2px solid var(--accent);
