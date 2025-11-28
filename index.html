@@ -1,80 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Acadêmico</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio - Gabriel</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Alex Gabriel Leonel Lima</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas - Fatec SJC</p>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#trabalhos">Trabalhos</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#introducao">Introdução</a></li>
-      <li><a href="#curriculo">Currículo</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#trabalhos">Trabalhos Acadêmicos</a></li>
-      <li><a href="#certificados">Certificações</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
+  <!-- BOTÃO DE TEMA -->
+  <button id="theme-toggle">🌙 Tema</button>
 
-  <main>
-    <section id="introducao">
-      <h2>Introdução</h2>
-      <p>Uma breve introdução minha(Oque eu fiz/projetos/eventos).</p>
-    </section>
+  <!-- HOME -->
+  <section id="home" class="section">
+    <div class="card">
+      <h1>Olá, eu sou Gabriel</h1>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia e inovação.</p>
+    </div>
+  </section>
 
-    <section id="curriculo">
+  <!-- CURRÍCULO -->
+  <section id="curriculo" class="section">
+    <div class="card">
       <h2>Currículo</h2>
-      <p>Resumo da minha formação, cursos e certificações.</p>
-    </section>
+      <p><strong>Formação:</strong> ADS – FATEC São José dos Campos</p>
+      <p><strong>Certificações:</strong> Desenvolvimento Web, Python, AWS</p>
+      <p><strong>Habilidades:</strong> Python, HTML, CSS, Flask, Git, GitHub, AWS</p>
+    </div>
+  </section>
 
-    <section id="projetos">
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <div class="card">
       <h2>Projetos</h2>
-      <article>
-        <h3>Nome do Projeto</h3>
-        <p>Descrição, tecnologias e desafios enfrentados.</p>
-      </article>
-    </section>
+      <p>Projetos variados utilizando tecnologias como HTML, CSS, Python, Flask, BootStrap e SQL</p>
+      <a href="https://github.com/AlexGabrielll" class="btn">Ver no GitHub</a>
+    </div>
+  </section>
 
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML / CSS</li>
-        <li>Python</li>
-      </ul>
-    </section>
-
-    <section id="trabalhos">
+  <!-- TRABALHOS -->
+  <section id="trabalhos" class="section">
+    <div class="card">
       <h2>Trabalhos Acadêmicos</h2>
-      <p>Adicionar aqui a API.</p>
-    </section>
+      <p>A criação de um site em HTML, CSS, com a utilização de tecnologias como Flask, Python e SQl, para o ensino rápido do Método Scrum e da Metodologia Agil </p>
+      <a href="https://github.com/Ctrlseis/API-1-ADS" class="btn">Ver no GitHub</a>
+    </div>
+  </section>
 
-    <section id="certificados">
-      <h2>Certificações</h2>
-      <p>Aqui colocar imagens ou PDFs de certificados obtidos.</p>
-    </section>
+  <!-- COMPETÊNCIAS -->
+  <section id="competencias" class="section">
+    <div class="card">
+      <h2>Competências Técnicas</h2>
 
-    <section id="contato">
+      <div class="tech-grid">
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          <p>Python</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <p>HTML</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+          <p>CSS</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg">
+          <p>Flask</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+          <p>Git</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+          <p>GitHub</p>
+        </div>
+
+        <div class="tech-item">
+          <img src="https://pt.wikipedia.org/wiki/Amazon_Web_Services">
+          <p>AWS</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="card">
       <h2>Contato</h2>
-      <ul>
-        <li>Email: gabriel.leonel0906@gmail.com</li>
-        <li>LinkedIn: <a href="#">www.linkedin.com/in/alex-gabriel-leonel-0b3339302</a></li>
-        <li>GitHub: <a href="#">https://github.com/AlexGabrielll</a></li>
-      </ul>
-    </section>
-  </main>
+      <p>Email: gabriel.leonel0906@gmail.com</p>
+      <p>LinkedIn: www.linkedin.com/in/alex-gabriel-leonel-0b3339302</p>
+      <p>GitHub: https://github.com/AlexGabrielll</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Alex Gabriel Leonel Lima - Portfólio Acadêmico</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
